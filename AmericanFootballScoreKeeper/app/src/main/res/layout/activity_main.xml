@@ -75,7 +75,7 @@
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
                 android:onClick="safetyForTeamA"
-                android:text="safety"
+                android:text="2 pt conv/safety"
                 android:textColor="@android:color/darker_gray" />
 
         </LinearLayout>
@@ -149,7 +149,7 @@
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
                 android:onClick="safetyForTeamB"
-                android:text="safety"
+                android:text="2 pt conv/safety"
                 android:textColor="@android:color/darker_gray" />
 
         </LinearLayout>
