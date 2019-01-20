@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bee's Knees"
+        android:background="@color/colorBanner"
+        android:textSize="40sp"
+        android:textAlignment="center"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/honey_image"
+        android:src="@drawable/honey"
+        android:layout_height="250dp"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:paddingTop="15dp">
+
+        <ImageView
+            android:id="@+id/location_icon"
+            android:src="@drawable/baseline_location_on_black_18dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+
+        <TextView
+            android:id="@+id/address_street"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="123 Honey Bee Ln."
+            android:layout_toRightOf="@id/location_icon"
+            android:textSize="24sp"
+            android:paddingLeft="20dp" />
+
+        <TextView
+            android:id="@+id/address_zip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Countryville, OH, USA 12345"
+            android:layout_below="@id/location_icon"
+            android:layout_toRightOf="@id/location_icon"
+            android:textSize="24sp"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="-15dp"/>
+
+        <ImageView
+            android:id="@+id/phone_icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/baseline_local_phone_black_48dp"
+            android:layout_below="@id/address_zip"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1-800-555-HIVE"
+            android:layout_toRightOf="@id/phone_icon"
+            android:layout_below="@id/address_zip"
+            android:textSize="24sp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/phone_icon"
+        android:text="We are a beekeeping and honey producing company. We cut out the middle man to bring fresh, locally produced honey straight to you."
+        android:textSize="20sp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="20dp"
+        />
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Business hours:"
+        android:textSize="24sp"
+        android:paddingLeft="20dp"
+    />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Monday - Friday:"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Saturday:"
+                android:layout_gravity="end"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Sunday:"
+                android:layout_gravity="end"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="25dp">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="9:00 a.m. - 5:00 p.m."
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="9:00 a.m. - 7:00 p.m."
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="CLOSED"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
