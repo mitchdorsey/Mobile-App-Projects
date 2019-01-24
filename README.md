@@ -1,4 +1,3 @@
 # Mobile-App-Projects
-A repository containing mobile app projects
+A repository containing mobile app projects developed in Android Studio.
 
-All projects to date were developed in Android Studio.
